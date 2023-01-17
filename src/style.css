@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Code Pro', monospace;
+  line-height: 1;
+}
+
+html, body {
+  background-color: #fff;
+}
+
+.s-gpu {
+  will-change: transform;
+}
+
+.js-height {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.l-debug {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  color: #FFF;
+  font-size: 12px;
+  display: none;
+}
+
+.l-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+
+
+
+
+.l-info {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 20px;
+  color: #fff;
+  border-top: 10px solid #fff;
+}
+.l-info p {
+  margin-top: 0.5em;
+  font-size: 28px;
+  color: inherit;
+}
+.l-info span {
+  display: block;
+  margin-top: 0.5em;
+}
+.l-info a {
+  font-size: 14px;
+  color: inherit;
+  text-decoration: line-through;
+}
+.l-info a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width:768px) {
+  .l-info {
+    border-top: 10px solid #fff;
+    margin: 10px;
+    bottom: auto;
+    top: 10px;
+  }
+  .l-info p {
+    font-size: 24px;
+  }
+  .l-info a {
+    font-size: 14px;
+  }
+}
